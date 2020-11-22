@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SocialNetworkCardview"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:translationZ="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp"
+        android:layout_height="130dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:text="شبکه های اجتماعی"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#9E9E9E"
+
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:id="@+id/Linear_Telegram"
+                    android:layout_width="0dp"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:src="@drawable/telegram" />
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="تلگرام"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/Linear_Instagram"
+                    android:layout_width="0dp"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:padding="2dp"
+                        android:src="@drawable/instagram" />
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="اینستاگرام"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip" />
+    <View
+        android:background="#ffe3e3e7"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="10.0dip" />
+
+    <LinearLayout
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="15.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|right"
+            android:text="شبکه های اجتماعی :"
+            android:textColor="#1b6e25"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/telegram"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:text=": تلگرام"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/Telegram_Link_EditText"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="120dp"
+            android:hint="لینک یا یوزر تلگرام"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:gravity="center_vertical" />
+        <Button
+            android:id="@+id/Test_LinkTelegram"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="تست لینک"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/instagram"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:textSize="10sp"
+
+            android:text=": اینستاگرام"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/Instagram_Link_EditText"
+            android:layout_width="120dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:hint="یوزر یا لینک اینستاگرام"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/Test_LinkInsta"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="تست لینک"/>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+        android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_margin="5dp"
+    android:textSize="10sp"
+
+    android:text=": وب سایت"
+    android:layout_height="wrap_content" />
+    <EditText
+    android:id="@+id/Website_Link_EditText"
+    android:layout_width="150dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    style="@style/Base.TextAppearance.AppCompat.Small"
+
+    android:hint="لینک سایت"
+    android:layout_height="wrap_content" />
+    <Button
+    android:id="@+id/Test_Website"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:text="تست لینک"/>
+
+    </LinearLayout>
+</LinearLayout>
